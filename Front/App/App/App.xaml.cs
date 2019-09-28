@@ -3,18 +3,17 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using App.Services;
 using App.Views;
+using Firebase.Database;
 
 namespace App
 {
     public partial class App : Application
     {
-
+        public static FirebaseOptions Options { get; set; }
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()
