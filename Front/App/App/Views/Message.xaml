@@ -6,11 +6,6 @@
              mc:Ignorable="d"
              x:Class="App.Views.Message">
     <ContentView.Content>
-        <Frame BackgroundColor="{Binding CorloMessage}">
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="{Binding Align}">
-                <Label Text="{Binding Message}" Style="{StaticResource Message}"/>
-                <Label Text="{Binding Date}" Style="{Static Date}"/>
-            </StackLayout>
-        </Frame>
+        
   </ContentView.Content>
 </ContentView>
