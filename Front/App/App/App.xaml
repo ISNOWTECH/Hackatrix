@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--#region -->
+            <Style x:Key="BaseLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Black"/>
+                
+            </Style>
+            <Style x:Key="BaseButton" TargetType="Button">
+                
+            </Style>
+            <!--#endregion-->
+            
+            
+            <Style x:Key="Date" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="TextColor" Value="DarkGray"/>
+            </Style>
+            <Style x:Key="Message" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+                <Setter Property="FontAttributes" Value="Italic"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
